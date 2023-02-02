@@ -8,6 +8,7 @@ import lombok.Data;
 @Data
 public abstract class Piece implements Moveable {
 
+    private String id;
     private String name;
     private int posX;
     private int posY;

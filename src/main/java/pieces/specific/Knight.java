@@ -5,6 +5,7 @@ import board.Field;
 import constants.Color;
 import constants.LetterMap;
 import java.util.List;
+import java.util.UUID;
 import lombok.NoArgsConstructor;
 import pieces.Piece;
 
@@ -12,6 +13,7 @@ import pieces.Piece;
 public class Knight extends Piece {
 
     public Knight(Color color, String field) {
+        this.setId(UUID.randomUUID().toString());
         this.setName("Knight");
         this.setColor(color);
         String[] fieldSplit = field.split("");
